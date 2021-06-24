@@ -23,3 +23,4 @@ t.down()  #선 내리기
 polygon2(4, 80)
 polygon2(5, 100)
     
+t. mainloop()  # 창이 꺼지지 않도록 하기
