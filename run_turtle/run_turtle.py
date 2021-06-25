@@ -33,6 +33,8 @@ def play():
         t.ontimer(play, 100)  # 0.1초 간격으로 작동
 
 # 메인 영역
+t.setup(500,500) #너비, 높이
+t.title("달려라 거북아")
 t.bgcolor("lightpink")
 t.shape("turtle")
 t.speed(0)
