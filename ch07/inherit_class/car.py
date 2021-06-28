@@ -1,4 +1,5 @@
 # Car 클래스 - Taxi, Bus가 자식 클래스
+# 상속의 경우 - 메서드 재정의(오버라이딩)가 발생함
 
 class Car:
     def drive(self):
