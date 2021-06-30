@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyHome</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <!--CSS를 넣을때는 {{url_for('상위폴더',filename="세부경로 및 파일명'}} 순서이다    -->
+    <!--    <script src="{{url_for('static',filename='js/watch.js')}}"></script>-->
+</head>
+<body>
+    <h1>Welcome to my WebSite!!</h1>
+    <h2>인공지능 스피커 - 프렌즈</h2>
+    <img src="{{url_for('static',filename='images/friends.png')}}" width="600" height="400">
+    <p id="demo"></p>
+
+</body>
+</html>
