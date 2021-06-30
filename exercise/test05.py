@@ -8,11 +8,17 @@ class Calculator:
         self.value += val
         return self.value
 
-class UpgradeCalculator(Calculator): # Cal을 상속받는 거임
+class UpgradeCalculator(Calculator):  # Cal을 상속받는 거임
 
-    def sub(self,val):
-        self.value -= val
-        return self.value
+        def sub(self, val):
+            self.value -= val
+            return self.value
+cal = UpgradeCalculator()
+cal.add(10)
+cal.sub(7)
+
+print(cal.value)
+# 2번
 
 class MaxlimitCalculator(Calculator):
 
@@ -37,10 +43,34 @@ print(cal2.add(60))
 print(cal2.value)
 
 
-A = [70,60,55,75,95,90,80,80,85,100]
-total = 0
-for score in A:
-    total += score
-average = total/len(A)
-print(average)
 
+# 3번
+
+# 4번
+def positive(a):
+    a2 = []
+    for i in a:
+        if i >= 0:
+            a2.append(i)
+    return a2
+
+
+li = [1, -2, 3, -5, 8, -3]
+li2 = positive(li)
+print(li2)
+#print(list(filter(lambda x : x >= 0, li))) - 람다식으로 간편하게 가능
+
+
+# 5번
+
+# 6번
+def times(a):
+    a2 = []
+    for i in a:
+        a2.append(i*3)
+    return a2
+
+li = [1, 2, 3, 4]
+li2 = times(li)
+print(li2)
+print(list(map(lambda x : x*3, li)))
