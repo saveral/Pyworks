@@ -3,7 +3,7 @@
 import random           # import를 꼭 해줘야해염~!
 import time
 
-f = open('word.txt', 'r')
+f = open('words.txt', 'r')
 word = f.read().split()  # 리스트 형태로 가져옴
 # print(word)
 f.close()
