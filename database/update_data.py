@@ -1,14 +1,14 @@
-# 특정한 자료 삭제
+# 자료 내용 변경
 from libs.db.dbconn import getconn
 
-def delete_data():
+def update_data():
     conn = getconn()
     cur = conn.cursor()
-    sql = "delete from member where mem_num = 103"
+    sql = "update member set name='이몽룡' where mem_num = 104"
     cur.execute(sql)
 
     conn.commit()
     conn.close()
 
 if __name__=="__main__":
-    delete_data()
+    update_data()

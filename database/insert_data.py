@@ -5,9 +5,9 @@ from libs.db.dbconn import getconn
 def insert_data():
     conn = getconn()
     cur = conn.cursor()
-    # 자료 추가 = SQL
-    cur.execute("insert into member values ('최영', 60)")
-    cur.execute("insert into member values ('이순신',50)")
+    # 자료 추가 - SQL
+    cur.execute("insert into member values (103, '황진이', 25)")
+    cur.execute("insert into member values (104, '성춘향', 22)")
     conn.commit()
     conn.close()
 
