@@ -9,7 +9,7 @@ def select_emp():
     rs = cur.fetchall()  # 데이터 목록 반환
     for i in rs:
         print(i)
-        conn.close()
+    conn.close()
 def select_one():
     conn = getconn()
     cur = conn.cursor()
