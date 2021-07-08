@@ -25,4 +25,4 @@ ul = contents.find('ul', {'class':'lang'})
 # 중국어 검색 방법
 lis = ul.find_all('li')
 print(lis)
-print(lis[1].text)
+print(lis[2].text)

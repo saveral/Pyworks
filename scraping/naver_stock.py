@@ -9,7 +9,7 @@ def getcontent():
 
 contents = getcontent()
 no_today = contents.find('p', {'class':'no_today'})
-#print(no_today)
+print(no_today)
 price = no_today.find('span', {'class': 'blind'}) #blind는 웹에서 보이지 않음
 print(price)
 print("삼성전자 주가 : {}원".format(price.text))
